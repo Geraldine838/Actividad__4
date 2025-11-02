@@ -8,7 +8,8 @@ Excercises
 """
 
 from random import random
-from turtle import *
+from turtle import width, color, update, up, down, goto, dot
+from turtle import setup, hideturtle, tracer, onscreenclick, done
 
 from freegames import line
 
