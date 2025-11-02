@@ -1,23 +1,12 @@
-"""Maze, move from one side to another.
-
-Excercises
-
-1. Keep score by counting taps.
-2. Make the maze harder.
-3. Generate the same maze twice.
-"""
-
 from random import random
-from turtle import width, color, update, up, down, goto, dot, bgcolor
+from turtle import width, color, update, up, down, goto, dot, Screen
 from turtle import setup, hideturtle, tracer, onscreenclick, done
 
-from freegames import line
-
+screen = Screen()
+screen.bgcolor('lightblue')
 
 def draw():
-    """Draw maze."""
-   bgcolor('lightblue')
-   color('black')
+    color('black')
     width(5)
 
     for x in range(-200, 200, 40):
@@ -29,9 +18,7 @@ def draw():
 
     update()
 
-
 def tap(x, y):
-    """Draw line and dot for screen tap."""
     if abs(x) > 198 or abs(y) > 198:
         up()
     else:
@@ -41,7 +28,6 @@ def tap(x, y):
     color('red')
     goto(x, y)
     dot(4)
-
 
 setup(420, 420, 370, 0)
 hideturtle()
