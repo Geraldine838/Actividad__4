@@ -8,7 +8,7 @@ Excercises
 """
 
 from random import random
-from turtle import width, color, update, up, down, goto, dot
+from turtle import width, color, update, up, down, goto, dot, bgcolor
 from turtle import setup, hideturtle, tracer, onscreenclick, done
 
 from freegames import line
@@ -16,7 +16,8 @@ from freegames import line
 
 def draw():
     """Draw maze."""
-    color('black')
+   bgcolor('lightblue')
+   color('black')
     width(5)
 
     for x in range(-200, 200, 40):
